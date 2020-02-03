@@ -1,0 +1,557 @@
+/*-------Debut--------*/
+body{
+	font-family: Calibri, serif;
+	margin: 0;
+	padding: 0px;
+}
+
+html{
+	margin:0;
+	padding:0;
+	background: url("courCour.png") no-repeat center fixed; 
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow:hidden;
+}
+
+header{
+	font-size: 1.25rem;
+}
+
+nav>ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+nav> ul>li  .nous:hover a{
+	padding: 0px 0px 0px 0px;
+	margin:0;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.niveau3{
+	display: none;
+	margin:0;
+}
+
+nav li:hover .niveau3{
+	display: inline-block;
+	position: absolute;
+	top: 7%;
+	left: 123px;
+	padding: 0px;
+}
+
+/*affiche les lignes en dessous des sous-onglets*/
+.niveau3 li{
+	border-bottom: 1px solid black;
+}
+
+.niveau3 li a{
+	padding: 10px 5px;
+	font-size: 18px;
+	color: #222538;
+	width:191px;
+	text-align:center;
+}
+
+/*longueur et couleur de fond barre des onglets*/
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+
+/*aligner les différents onglets*/
+nav > ul > li{
+	display: inline-flex;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*Espacer et mettre en noir les boutons menus*/
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+/*Bande au dessus des sous menus*/
+nav li:hover{
+	border-top: 3px solid white;
+	background-color: RGBa(255, 255, 255, 0.15);
+}
+
+/*Couleur fond des sous-menu*/
+.nous .niveau3{
+	background-color: RGB(255, 255, 255, 0.5);
+}
+
+/*mettre en gras les boutons sous menu hover*/
+.niveau3 li:hover{
+	font-weight:bold;
+	font-size:20px;
+	font-family: Calibri, serif;
+}
+
+footer{
+	background-color:#424558;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	color:white;
+	text-align:center;
+	padding-top: 10px;
+} 
+
+ul{
+	list-style-type:none;
+}
+
+/* ---------- Maths ---------- */
+#zone_maths {
+	font-weight: bold;
+	margin-left: 235px;
+	margin-top: 145px;		
+	font-family: calibri, sans-serif;
+	font-size: 65px;
+	width:20%;
+}
+
+#zone_maths a {
+	text-decoration : none;
+	color : white;
+}
+
+/* ----- 1er calcul ----- */
+.maths {
+	position : absolute;
+	margin-top: 40px;
+	margin-left: 283px;
+}
+
+.text-base {
+	opacity: 1;
+	position : absolute;
+	margin-left : 625px;
+	margin-top : -75px;
+}
+
+.text-hover {
+	position : absolute;
+	margin-left : 625px;
+	margin-top : -75px;
+	display: none;
+}
+
+.maths:hover .text-base {
+	opacity: 0;
+}
+
+.maths:hover .text-hover {
+	display: inherit;
+	position: absolute; 
+}
+
+/* ----- 2ème calcul ----- */
+.maths2 {
+	position : absolute;
+	margin-top: 128px;
+	margin-left: 286px;
+}
+
+.text-base2 {
+	opacity: 1;
+	position : absolute;
+	margin-left : 620px;
+	margin-top : -77px;
+}
+
+.text-hover2 {
+	position : absolute;
+	margin-left : 625px;
+	margin-top : -75px;
+	display: none;
+}
+
+.maths2:hover .text-base2 {
+	opacity: 0;
+}
+
+.maths2:hover .text-hover2 {
+	display: inherit;
+	position: absolute; 
+}
+
+/* ----- 3ème calcul ----- */
+.maths3 {
+	position : absolute;
+	margin-top: 222px;
+	margin-left: 283px;
+}
+
+.text-base3 {
+	opacity: 1;
+	position : absolute;
+	margin-left : 625px;
+	margin-top : -80px;
+}
+
+.text-hover3 {
+	position : absolute;
+	margin-left : 625px;
+	margin-top : -75px;
+	display: none;
+}
+
+.maths3:hover .text-base3  {
+	opacity: 0;
+}
+
+.maths3:hover .text-hover3  {
+	display: inherit;
+	position: absolute; 
+}
+/*----------Francais----------*/
+#francais {
+	margin-left : 69.63%;
+	margin-top : 173px;
+	width : 8%;
+	height : 8%;
+}
+
+#correction {
+	display : none;
+	color : orange;
+	font-weight :bold;
+	margin-top : -65px;
+	margin-left : 74.7%;
+}
+
+#fr {
+	margin-left : -90px;
+	margin-bottom: 70px;
+}	
+
+/*---------histoire----------*/
+#cuneiforme {
+	position : absolute;
+	margin-top : -270px;
+	margin-left : 66%;
+	height : 69px;
+}
+
+#hieroglyphe {
+	position : absolute;
+	margin-top : -265px;
+	margin-left : 78%;
+	height : 55px;
+}
+
+#traduction {
+	position : absolute;
+	display : none;
+	font-size : 25px;
+	font-weight : bold;
+	margin-left : 70%;
+	margin-top : -180px;
+}
+
+/* -----maths----- */
+.maths {
+	position : absolute;
+	margin-top: -39px;
+	margin-left: 155px;
+	font-size : 50px;
+}
+
+.text-base {
+	opacity: 1;
+	position : absolute;
+	margin-left : 625px;
+	margin-top : -75px;
+}
+
+.text-hover {
+	position : absolute;
+	margin-left : 625px;
+	margin-top : -75px;
+	display: none;
+}
+
+.maths:hover .text-base {
+	opacity: 0;
+}
+
+.maths:hover .text-hover {
+	display: inherit;
+	position: absolute; 
+}
+
+/*------ anglais ------ */
+#zone_anglais{
+	width:1000px;
+	height:1000px;
+	position:absolute;
+}
+
+#black {
+	position : absolute;
+	margin-top : 455px;
+	margin-left : 898px;
+	height : 15%;
+}
+
+#grey {
+	position : absolute;
+	margin-top : 353px;
+	margin-left : 907px;
+	height : 10.4%;
+}
+
+#brown {
+	position : absolute;
+	margin-top : 275px;
+	margin-left : 915px;
+	height : 9%;
+}
+
+#orange {
+	position : absolute;
+	margin-top : 209px;
+	margin-left : 935px;
+	height : 7%;
+}
+
+#yellow {
+	position : absolute;
+	margin-top : 158px;
+	margin-left : 873px;
+	height : 5.7%;
+}
+
+#green {
+	position : absolute;
+	margin-top : 158px;
+	margin-left : 1013px;
+	height : 5.7%;
+}
+
+#blue {
+	position : absolute;
+	margin-top : 117px;
+	margin-left : 950px;
+	height : 4.7%;
+}
+
+#purple {
+	position : absolute;
+	margin-top : 82px;
+	margin-left : 895px;
+	height : 3.8%;
+}
+
+#pink {
+	position : absolute;
+	margin-top : 81px;
+	margin-left : 1010px;
+	height : 4%;
+}
+
+#red {
+	position : absolute;
+	margin-top : 40px;
+	margin-left : 902px;
+	height : 4.6%;
+}
+
+#color_black {
+	position : absolute;
+	display : none;
+	margin-top : 500px;
+	margin-left : 800px;
+}
+
+#color_grey {
+	position : absolute;
+	display : none;
+	margin-top : 400px;
+	margin-left : 1200px;
+}
+
+#color_brown{
+	position : absolute;
+	display : none;
+	margin-top : 300px;
+	margin-left : 800px;
+}
+
+
+#color_brown{
+	position : absolute;
+	display : none;
+	margin-top : 300px;
+	margin-left : 800px;
+}
+
+#color_orange{
+	position : absolute;
+	display : none;
+	margin-top : 230px;
+	margin-left : 1200px;
+}
+
+#color_yellow{
+	position : absolute;
+	display : none;
+	margin-top : 170px;
+	margin-left : 750px;
+}
+
+#color_green{
+	position : absolute;
+	display : none;
+	margin-top : 170px;
+	margin-left : 1200px;
+}
+
+#color_blue{
+	position : absolute;
+	display : none;
+	margin-top : 120px;
+	margin-left : 800px;
+}
+
+#color_purple{
+	position : absolute;
+	display : none;
+	margin-top : 80px;
+	margin-left : 785px;
+}
+
+#color_pink{
+	position : absolute;
+	display : none;
+	margin-top : 80px;
+	margin-left : 1200px;
+}
+
+#color_red{
+	position : absolute;
+	display : none;
+	margin-top : 20px;
+	margin-left : 1000px;
+}
+
+#carte
+{
+    position : absolute;
+    margin-top:-286px;
+    margin-left:18.3%;
+
+}
+#bateauCarte
+{
+    display :none;
+    position : absolute;
+    margin-top:-286px;
+    margin-left:18.3%;
+    height: 190.5px;
+}
+
+/*----zone----*/
+#zone{
+	display:none;
+}
+
+/*---------porte-----*/
+ #zone_porte{
+	display:none;
+	width:150px;
+	height:50px;
+	margin-left: 50%;
+	margin-top: 10vh;
+	position:fixed;
+}
+
+#porte{
+	border-radius:0.4em;
+	width:150px;
+	height:50px;
+	font-size:120%;
+}
+
+/*----Carnet de liaison----*/
+#carnet{
+	margin-top:-15px;
+	width:45px;
+	height:50px;
+}
+
+#carnet_ouvert{
+	background-color: RGBa(0, 0, 0, 0.7);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 15vh;
+	width:37%;
+	padding:50px;
+	display :none;
+}
+
+#matiere_valide{
+	background:url("carnet_ouvert.jpg") no-repeat;
+	margin-left:3vh;
+	padding:40px 10px 50px;
+}
+
+#fr_ok, #geo_ok, #hist_ok, #ang_ok, #maths_ok{display:none}
+
+/*-----coffre-----*/
+#recompense{
+	width : 200px;
+	height : 200px;
+	background-image : url('coffre_ferme.png');
+	position : relative;
+	left : 25%;
+	top : 500px;
+	-webkit-transform : translate(-50%, -50%);
+	transform : translate(-50%, -50%);
+	perspective : 1000px;
+	display:none;
+}
+#recompense:hover{
+	width : 225px;
+	height : 200px;
+	background-image : url('coffre_ouvert.png');
+	position : relative;
+	left : 25%;
+	top : 495px;
+	-webkit-transform : translate(-50%, -50%);
+	transform : translate(-50%, -50%);
+	perspective : 1000px;
+}
+
+#puzzle{
+	background-color: RGBa(0, 0, 0, 0.7);
+	padding:50px;
+	display:none;
+	text-align:center;
+	height:150px;
+	width: 500px;
+	color:white;
+	margin-top: 10%;
+	margin-left:30%;
+}
+
+#puzzle button{
+	width:100px;
+	height:50px;
+	border-radius:0.4em;
+	padding:10px;
+}

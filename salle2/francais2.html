@@ -1,0 +1,106 @@
+ <!Doctype html>
+
+<html lang="fr">
+	<head>
+		<title>SchoolWeb</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="total2.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			#ph2, #ph3,#ph4, #ph5, #p2
+			{ 
+			display:none;
+			align-content :center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="">Accueil</a>
+					</li>		
+							
+					<li class=nous>
+						<a href="">A propos de nous</a>
+						<ul class="niveau3">
+							<li> <a href="nous.html">Effectif</a></li>
+							<li> <a href="">Le Projet</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="">Contactez-nous</a>
+					</li>
+				</ul>
+				
+			</nav>	
+		</header>
+		<main>
+			<div id="presentation">
+				<h1>Français</h1>
+				<h2>Problème n°1</h2>
+			</div>
+		
+			<div id="corps">
+				<div id="Probleme">
+					<h1> Problème n°1</h1>
+						<p>Trouve le sujet !</p>
+						<cite id='sujet1' onclick='sujetTrouve();' >Le chat</cite>
+						<cite id='pS' onclick='sujetNonTrouve();'> dort </cite>
+						<cite id='pS2' onclick='sujetNonTrouve();'>sur</cite> 
+						<cite id='pS3' onclick='sujetNonTrouve();'>la</cite>
+						<cite id='pS4' onclick='sujetNonTrouve();'> chaise </cite>
+						<cite id='ps5' onclick='sujetNonTrouve();'>de </cite>
+						<cite id='pS6' onclick='sujetNonTrouve();'>la cuisine.</cite>
+				</div>
+			</div>
+		<script>
+			var i =0;
+			
+			function afficher_corps(){
+				document.getElementById('presentation').style.display='none';
+				document.getElementById('corps').style.display='block';
+			}
+
+			setTimeout(afficher_corps, 1000);
+			
+			function afficher_aide(){
+				document.getElementById('aide').style.display='block';
+			}
+
+			setTimeout(afficher_aide, 15000);
+
+			function afficher_table_aide(){
+				document.getElementById('corps').style.display='none';
+				document.getElementById('helping').style.display='block';
+			}
+			
+			function sujetTrouve()
+			{
+				alert('Bravo ! tu as réussi ! Le sujet était LE CHAT');
+				document.location.href="francais2_2.html"; 
+			}
+			function sujetNonTrouve()
+			{
+				if(i!=3)
+				{
+				alert('raté ! Essaye encore ! ');
+				i=i+1;
+				}
+				else 
+				{
+					alert("Cherche d'abord le verbe dans la phrase ! Le sujet est celui qui fait l'action");
+					i=0;
+				}
+			}
+			
+		</script>
+
+
+		</main>
+		<footer>Créer par Wissale Jerraf, Hana Ben Hamida, Vak Sam Sophie Ham, Roxane Marchand & Emilie Arquilliere </footer>
+	</body>
+</html>

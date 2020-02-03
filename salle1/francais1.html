@@ -1,0 +1,119 @@
+ <!Doctype html>
+
+<html lang="fr">
+	<head>
+		<title>SchoolWeb</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="total.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" ></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="">Accueil</a>
+					</li>		
+							
+					<li class=nous>
+						<a href="">A propos de nous</a>
+						<ul class="niveau3">
+							<li> <a href="nous.html">Effectif</a></li>
+							<li> <a href="">Le Projet</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="">Contactez-nous</a>
+					</li>
+				</ul>
+			</nav>	
+		</header>
+
+		<main>
+			<div id="presentation">
+					<h1>Français</h1>
+					<h2>Problème n°1</h2>
+			</div>
+			
+			<div id="corps">
+				<a href="classe.php" id="croix"><img src="croix.png" alt="croix"/></a>
+				<div id="Probleme">
+					<h1> Problème n°1</h1>
+					<p>Corrige les mots en italique !</p>
+												
+					<p> Il y avait une fois un marchand qui était <em>extrémement</em> riche
+					<ul>
+						<input type="button" name="student_code"  id="oui" onclick='change(this);' value='extrêmement'>
+						<input type="button" name ="student_code"  id="non" value='extremement' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="nop" value='extraiemement' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="nien" value='extrèmement' onclick='mauvais(this);'>
+					</ul>
+				Il avait six <em>enfans</em>, trois garçons et trois filles;
+					<ul>
+						<input type="button" name="student_code"  id="no1" value='enfant' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="nop1" value='anfents' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="oui1" value='enfants' onclick='change(this);'>
+						<input type="button" name ="student_code"  id="nien1" value='enfents' onclick='mauvais(this);'>
+					</ul>
+				
+				et, comme ce <em>marchent</em> était un homme d'esprit, 
+					<ul>
+						<input type="button" name="student_code"  id="nop" value='marchant' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="oui2" onclick="change(this);" value='marchand'>
+						<input type="button" name ="student_code"  id="non" value='marchend' onclick='mauvais(this);'>
+					</ul>
+					il n'épargna rien pour l'éducation de ses enfants, 
+					et leur donna toutes sortes de maîtres. 
+					Ses filles étaient très belles ; 
+					mais la cadette, surtout, se faisait admirer, 
+					et on ne l'appelait, quand elle était petite, que la belle enfant ;
+					en sorte que le nom lui en resta ; ce qui donna beaucoup de jalousie à ses sœurs. 
+					Cette cadette, qui était plus belle que ses sœurs, était aussi 
+					<em>meillere</em> 
+					<ul>
+						<input type="button" name="student_code"  id="oui3" value='meilleure' onclick='change(this);'>
+						<input type="button" name ="student_code"  id="nop3" value='meilleur' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="non3" value='mailleure' onclick='mauvais(this);'>
+					</ul>
+					qu'elles.</p>
+				</div>						
+			</div>
+		</main>
+
+		<footer>Créer par Wissale Jerraf, Hana Ben Hamida, Vak Sam Sophie Ham, Roxane Marchand & Emilie Arquilliere </footer>
+			
+		<script>
+			 function afficher_corps(){
+				document.getElementById('presentation').style.display='none';
+				document.getElementById('corps').style.display='block';
+			}
+
+			setTimeout(afficher_corps, 1000);
+			 
+			 var i=0;
+			function change(id)
+				{
+					var color = document.getElementById(id);
+					id.style.backgroundColor="green";
+					i=i+1;
+					pagesuivante();
+				}
+			function mauvais(id)
+			{
+				//var color = document.getElementById(id);
+				id.style.backgroundColor="red";
+				}
+			function pagesuivante()
+			{
+				if(i==4)
+				{
+					window.setTimeout("location=('francais1_2.html');", 1000);
+				}
+			}
+			
+		</script>
+	</body>
+</html>

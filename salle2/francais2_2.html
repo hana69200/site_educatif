@@ -1,0 +1,91 @@
+ <!Doctype html>
+
+<html lang="fr">
+	<head>
+		<title>SchoolWeb</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="total2.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			#ph2, #ph3,#ph4, #ph5, #p2
+			{ 
+			display:none;
+			align-content :center;
+			}
+			
+		</style>
+		<script>
+			function afficher_corps(){
+				document.getElementById('presentation').style.display='none';
+				document.getElementById('corps').style.display='block';
+			}
+
+			setTimeout(afficher_corps, 1000);
+			
+			function afficher_aide(){
+				document.getElementById('aide').style.display='block';
+			}
+
+			setTimeout(afficher_aide, 15000);
+
+			function afficher_table_aide(){
+				document.getElementById('corps').style.display='none';
+				document.getElementById('helping').style.display='block';
+			}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="">Accueil</a>
+					</li>		
+							
+					<li class=nous>
+						<a href="">A propos de nous</a>
+						<ul class="niveau3">
+							<li> <a href="nous.html">Effectif</a></li>
+							<li> <a href="">Le Projet</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="">Contactez-nous</a>
+					</li>
+				</ul>
+				
+			</nav>	
+		</header>
+		<main>
+		
+			<div id="presentation">
+				<h1>Français</h1>
+				<h2>Problème n°2</h2>
+			</div>
+			
+			<div id="corps">
+				<div id="Probleme">
+					<h1> Problème n°2</h1>
+						<div id='texte'>
+							<p>Lorsque tu as lu tout le texte, cliques sur suivant !</p>
+							
+							Roland était en retard. 
+							« Va au coin »,dit le maître, et Roland obéit.
+							Mais, au coin, il n'y avait rien à faire, 
+							alors Roland prit son crayon et dessina un tigre allongé sur le mur.
+							Puis il dit : « CRACK » et le tigre devint vivant. 
+							Le tigre s'étira, se déroula de tout son long et dit bonjour au maître très poliment. 
+							Le maître répondit : « Il n'y a pas de place pour toi ici. »
+							Il ouvrit la porte et, sans un mot de plus, le tigre sortit. 
+							« Récréation, tout le monde dehors maintenant », dit le maître. 
+							« Sauf toi, Roland. Tu restes ici. Et attention, plus de « CRACK », je te prie ».
+						</div>
+						<a href='francais2_2_2.php'><button>Suivant</button></a>
+				</div>
+			</div>
+		</main>
+		<footer>Créer par Wissale Jerraf, Hana Ben Hamida, Vak Sam Sophie Ham, Roxane Marchand & Emilie Arquilliere </footer>
+	</body>
+</html>

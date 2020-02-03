@@ -1,0 +1,380 @@
+/*----Carnet de liaison----*/
+#carnet{
+	margin-top:-30px;
+	width:45px;
+	height:50px;
+}
+
+#carnet_ouvert{
+	background-color: RGBa(0, 0, 0, 0.7);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 15vh;
+	width:37%;
+	padding:50px;
+	display :none;
+}
+
+#matiere_valide{
+	background:url("carnet_ouvert.jpg") no-repeat;
+	margin-left:3vh;
+	padding:40px 10px 50px;
+}
+
+#fr_ok, #geo_ok, #hist_ok, #ang_ok, #maths_ok{display:none}
+
+/* ----- Anglais ----- */
+#flag { 
+	position: fixed; 
+	top: 281px; 
+	right: 325px;
+} 
+
+#flag1 { 
+	position: absolute; 
+	top: 281px; 
+	left: 550px;
+} 
+
+
+/* ----- Histoire ----- */
+img {
+	position : fixed;
+	display : inline-block;
+}
+
+#pre1 {
+	height: 115px;
+	width: 60px;
+	left : 397px;
+	bottom : 325px;
+}
+
+#pre2 {
+	height: 115px;
+	width: 60px;
+	left : 467px;
+	bottom : 325px;
+}
+
+#gaule {
+	height: 115px;
+	width: 60px;
+	left : 545px;
+	bottom : 325px;
+}
+
+#rome {
+	height: 115px;
+	width: 60px;
+	left : 615px;
+	bottom : 325px;
+}
+
+#moyen {
+	height: 108px;
+	width: 98px;
+	left : 775px;
+	bottom : 345px;
+}
+
+#roi {
+	height: 108px;
+	width: 98px;
+	left : 898px;
+	bottom : 345px;
+}
+
+#napoleon {
+	height: 115px;
+	width: 60px;
+	left : 1097px;
+	bottom : 325px;
+}
+
+#revolt {
+	height: 115px;
+	width: 60px;
+	left : 1167px;
+	bottom : 325px;
+}
+
+#guerre {
+	height: 115px;
+	width: 60px;
+	left : 1245px;
+	bottom : 325px;
+}
+
+#mur {
+	height: 115px;
+	width: 60px;
+	left : 1313px;
+	bottom : 325px;
+}
+/* ---------- hover ---------- */
+#pre1:hover {
+	z-index: 1;
+	left : 355px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#pre2:hover {
+	z-index: 1;
+	left : 440px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#gaule:hover {
+	z-index: 1;
+	left : 505px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#rome:hover {
+	z-index: 1;
+	left : 585px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#moyen:hover {
+	z-index: 1;
+	left : 755px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#roi:hover {
+	z-index: 1;
+	left : 897px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#napoleon:hover {
+	z-index: 1;
+	left : 1055px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#revolt:hover {
+	z-index: 1;
+	left : 1135px; 
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#guerre:hover {
+	z-index: 1;
+	left : 1205px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+#mur:hover {
+	z-index: 1;
+	left : 1295px;
+	height: 200px;
+	width: 120px;
+	bottom : 280px;
+}
+
+/* ---------- Geo ---------- */
+
+.book-box {
+	width : 100px;
+	height : 145px;
+	background-image : url(carte2.png);
+	position : relative;
+	left : 66%;
+	top : 580px;
+	-webkit-transform : translate(-50%, -50%);
+	transform : translate(-50%, -50%);
+	perspective : 1000px;
+}
+
+.book-cover {
+	width : 100px;
+	height : 100%;
+	position : absolute;
+	left : 0.5px;
+	background : #000;
+	transform : rotateY(-20deg);
+	transform-style : preserve-3d;
+	transform-origin : left;
+	transition : all .5s ease-in;
+}
+
+.book-box:hover .book-cover {
+	transform : rotateY(-180deg);
+}
+
+figure {
+	position : absolute;
+	margin-top : 0px;
+	display : block;
+	position : above;
+	width : 100%;
+	height : 100%;
+	left : -40px;
+	backface-visibility : hidden;
+}
+
+figure.front {
+	background-image : url(atlas.png);
+}
+
+figure.back {
+	background-image : url(carte1.png);
+	transform : rotateY(180deg);
+}
+
+
+/* ---------- Maths ---------- */
+#zone_maths {
+    font-weight: bold;
+    margin-left: 235px;
+    margin-top: 145px;    
+    color: black;    
+    font-family: calibri, sans-serif;
+    font-size: 65px;
+    width:20%;
+}
+/* ----- 1er calcul ----- */
+.maths1 {
+    position : absolute;
+    margin-top: 40px;
+    margin-left: 283px;
+}
+
+.text-base1 {
+    opacity: 1;
+    position : absolute;
+    margin-left : 625px;
+    margin-top : -75px;
+}
+
+.text-hover1 {
+    position : absolute;
+    margin-left : 625px;
+    margin-top : -75px;
+    display: none;
+}
+
+.maths1:hover .text-base1, .maths2:hover .text-base2, .maths3:hover .text-base3  {
+    opacity: 0;
+}
+
+.maths1:hover .text-hover1, .maths2:hover .text-hover2, .maths3:hover .text-hover3  {
+    display: inherit;
+    position: absolute;
+}
+/* ----- 2ème calcul ----- */
+.maths2 {
+    position : absolute;
+    margin-top: 128px;
+    margin-left: 286px;
+}
+
+.text-base2 {
+    opacity: 1;
+    position : absolute;
+    margin-left : 620px;
+    margin-top : -77px;
+}
+
+.text-hover2 {
+    position : absolute;
+    margin-left : 625px;
+    margin-top : -75px;
+    display: none;
+}
+/* ----- 3ème calcul ----- */
+.maths3 {
+    position : absolute;
+    margin-top: 222px;
+    margin-left: 283px;
+}
+
+.text-base3 {
+    opacity: 1;
+    position : absolute;
+    margin-left : 625px;
+    margin-top : -80px;
+}
+
+.text-hover3 {
+    position : absolute;
+    margin-left : 625px;
+    margin-top : -75px;
+    display: none;
+}
+
+#zone_maths p{
+	color:black;
+}
+
+/*-----coffre-----*/
+#recompense{
+	width : 200px;
+	height : 200px;
+	background-image : url('coffre_ferme.png');
+	position : relative;
+	left : 62%;
+	top : 160px;
+	-webkit-transform : translate(-50%, -50%);
+	transform : translate(-50%, -50%);
+	perspective : 1000px;
+	display:none;
+}
+#recompense:hover{
+	width : 200px;
+	height : 200px;
+	background-image : url('coffre_ouvert.png');
+	position : relative;
+	left : 62%;
+	top : 155px;
+	-webkit-transform : translate(-50%, -50%);
+	transform : translate(-50%, -50%);
+	perspective : 1000px;
+}
+
+#puzzle{
+	background-color: RGBa(0, 0, 0, 0.7);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-15vh;
+	width:50%;
+	padding:50px;
+	display:none;
+	text-align:center;
+}
+
+
+#porte{
+	display:none;
+	margin-left:85vh;
+	margin-top:35vh;
+	width:150px;
+}
+
+#porte button{
+	border-radius:0.4em;
+	width:150px;
+	height:50px;
+	font-size:120%;
+}

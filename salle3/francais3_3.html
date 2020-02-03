@@ -1,0 +1,220 @@
+  <!DOCTYPE HTML>
+<html>
+<head>
+<title>SchoolWeb</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="total3.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script> 
+			function afficher_corps(){
+				document.getElementById('presentation').style.display='none';
+				document.getElementById('corps').style.display='block';
+			}
+
+				setTimeout(afficher_corps, 1000);
+			
+
+			function verif1()
+			{
+				var entree=document.getElementById("rep1").value;
+				var reel="confondre";
+				var reel2="Coonfondre";
+				if(entree==reel || entree==reel2)
+				{
+					alert("bravo");
+					document.getElementById("phrase2").style.display='block';
+					document.getElementById("phrase1").style.display='none';
+					}
+				else
+				{
+					alert("dommage");
+					}
+			}
+
+			function verif2()
+			{
+				var entree=document.getElementById("rep2").value;
+				var reel="diriger";
+				var reel2="Diriger"
+				if(entree==reel || entree==reel2)
+				{
+					alert("bravo");
+					document.getElementById("phrase3").style.display='block';
+					document.getElementById("phrase2").style.display='none';
+
+					}
+				else
+				{
+					alert("dommage");
+					}
+			}	
+
+			function verif3()
+			{
+				var entree=document.getElementById("rep3").value;
+				var reel="arriver";
+				var reel2="Arriver"
+				if(entree==reel || entree==reel2)
+				{
+					alert("bravo");
+					document.getElementById("phrase4").style.display='block';
+					document.getElementById("phrase3").style.display='none';
+
+					}
+				else
+				{
+					alert("dommage");
+					}
+			}
+
+			function verif4()
+			{
+				var entree=document.getElementById("rep4").value;
+				var reel="dire";
+				var reel2="Dire"
+				if(entree==reel || entree==reel2)
+				{
+					alert("bravo");
+					window.setTimeout("location=('francais3_2.php');", 1000);
+
+					
+					}
+				else
+				{
+					alert("dommage");
+					}
+			}			
+        </script> 
+        <style> 
+            
+            p { 
+                font-size:20px; 
+                font-weight:bold; 
+            } 
+			em{
+				font-style:italique;
+				font-size:20px;
+				}
+				
+			a:link
+			{
+				text-decoration:none;
+				}
+            
+			#corps{
+				flex-direction:column;
+				background-color: RGBa(0, 0, 0, 0.7);
+				color: white;
+				margin-left:auto;
+				margin-right:auto;
+				width:75%;
+				height:50%;
+				margin-top:4vh;
+				text-align:center;
+				padding:50px;
+			}
+
+			#presentation{
+				background-color: RGBa(0, 0, 0, 0.7);
+				color: white;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:35vh;
+				padding:20px;
+				width:75%;
+				height:50%;
+				text-align:center;
+			}
+			
+			#reload button{
+				margin-left:auto;
+				margin-right:auto;
+				padding:5px;
+				border-radius:0.5em;
+				background-color:rgba(255,255,244,0.9);
+				margin-bottom:10px;
+			}
+			
+			#reload{
+				display:none;
+			}
+			
+			.mot{
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+			}
+			
+			#phrase2, #phrase3, #phrase4
+			{
+				display:none;
+				}
+        </style> 
+    </head> 
+    <body> 
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="">Accueil</a>
+					</li>
+							
+					<li class=nous>
+						<a href="">A propos de nous</a>
+						<ul class="niveau3">
+							<li> <a href="nous.html">Effectif</a></li>
+							<li> <a href="">Le Projet</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="">Contactez-nous</a>
+					</li>
+				</ul>		
+			</nav>	
+		</header>
+		
+		<div id="presentation">
+			<h1>Français</h1>
+			<h2>La conjugaison</h2>
+		</div>
+		
+		<div id="corps">
+			<a href="index.php" id="croix"><img src="croix.png" alt="croix"/></a>
+			<p>Trouves l'infinitif du verbe en italique </p> 
+			
+			<div id="phrase1">
+			<form>
+			<p>je <em>confonds</em> souvent  les verbes du 3ème groupes</p>
+			<input id="rep1"><input value="Je valide" onClick="verif1();"/>
+			</form>
+			</div>
+			
+			<div id="phrase2">
+			<p>ce chef d'entreprise <em>dirigeait</em> ses salariés avec passion</p>
+			<input id="rep2"><input value="Je valide" onClick="verif2();"/>
+			</form>
+			</div>
+			
+			<div id="phrase3">
+			<p>Nous <em>arrivâmes</em> tard dans la nuit</p>
+			<input id="rep3"><input value="Je valide" onClick="verif3();"/>
+			</form>
+			</div>
+			
+			<div id="phrase4">
+			<p>Vous <em>dites</em> la vérité</p>
+			<input id="rep4"><input value="Je valide" onClick="verif4();"/>
+			</form>
+			</div>
+			
+			
+			
+			
+			
+			<div id="reload"><a href ="francais3.html"><button>Essaye encore une fois</button></a></div>
+		
+		</div>
+		<footer>Créer par Wissale Jerraf, Hana Ben Hamida, Vak Sam Sophie Ham, Roxane Marchand & Emilie Arquilliere </footer>
+    </body> 
+</html>              

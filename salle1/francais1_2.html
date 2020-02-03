@@ -1,0 +1,110 @@
+ <!Doctype html>
+
+<html lang="fr">
+	<head>
+		<title>SchoolWeb</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="total.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" ></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="">Accueil</a>
+					</li>		
+							
+					<li class=nous>
+						<a href="">A propos de nous</a>
+						<ul class="niveau3">
+							<li> <a href="nous.html">Effectif</a></li>
+							<li> <a href="">Le Projet</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="">Contactez-nous</a>
+					</li>
+				</ul>
+				
+			</nav>	
+		</header>
+
+		<main>
+			<div id="presentation">
+				<h1>Français</h1>
+				<h2>Problème n°2</h2>
+			</div>
+			
+			<div id="corps">
+				<a href="classe.php" id="croix"><img src="croix.png" alt="croix"/></a>
+				<div id="Probleme">
+					<h1> Problème n°2</h1>
+					<p>Corrige les mots en italique !</p>
+					
+					
+					<em>Aujourdh'ui</em> Emile a une mission: 
+					<ul>
+						<input type="button" name="student_code"  id="no1" value="aujourd'hui" onclick='change(this);'>
+						<input type="button" name ="student_code"  id="nop1" value='aujourdhui' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="oui1" value='aujourdui' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="nien1" value='ojourdui' onclick='mauvais(this);'>
+					</ul>
+					
+					descendre la poubelle <em>john</em>, celles des vieux papiers.
+					<ul>
+						<input type="button" name="student_code"  id="no1" value="jone" onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="nop1" value='jonne' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="oui1" value='jaune' onclick='change(this);'>
+						<input type="button" name ="student_code"  id="nien1" value='jeaune' onclick='mauvais(this);'>
+					</ul>
+					
+					Mais avant Emile enfile une paire de <em>gigantesc</em> gants rose pour ranger, trier...
+					<ul>
+						<input type="button" name ="student_code"  id="nop1" value='jiganteques' onclick='mauvais(this);'>
+						<input type="button" name ="student_code"  id="oui1" value='gigantesque' onclick='mauvais(this);'>
+						<input type="button" name="student_code"  id="no1" value="gigantesques" onclick='change(this);'>
+
+					</ul>
+					Emile fait ce qu'il peut, mais il ne veut rien jeter, rien de rien, 
+					à part peut être, en cherchant bien ses vieux albums de Pinpin le Lapin...
+					<!--http://fr.hellokids.com/c_56908/lire-et-apprendre/livres-pour-enfants/emile-descend-les-poubelles-->
+				</div>
+			</div>
+		</main>
+
+		<footer>Créer par Wissale Jerraf, Hana Ben Hamida, Vak Sam Sophie Ham, Roxane Marchand & Emilie Arquilliere </footer>
+			
+			<script>
+			 function afficher_corps(){
+				document.getElementById('presentation').style.display='none';
+				document.getElementById('corps').style.display='block';
+			}
+
+			setTimeout(afficher_corps, 1000);
+			 
+			 var i=0;
+			function change(id)
+				{
+					id.style.backgroundColor="green";
+					i=i+1;
+					pagesuivante();
+				}
+			function mauvais(id)
+			{
+				id.style.backgroundColor="red";
+				}
+			function pagesuivante()
+			{
+				if(i==3)
+				{
+					window.setTimeout("location=('francais1_3.php');", 1000);
+				}
+			}
+			
+			</script>
+	</body>
+</html>

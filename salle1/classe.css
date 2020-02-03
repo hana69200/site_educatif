@@ -1,0 +1,390 @@
+#consigne{
+	background-color: RGBa(0, 0, 0, 0.7);
+	color: white;
+	margin-top: 40vh;
+	transform: translateY(-60%);
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:5%;
+	text-align:center;
+	display:block;
+}
+
+/*----Carnet de liaison----*/
+#carnet{
+	width:45px;
+	height:45px;
+	margin-top:-30px;
+	position:fixed;
+}
+
+#carnet_ouvert{
+	background-color: RGBa(0, 0, 0, 0.7);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 15vh;
+	width:37%;
+	padding:50px;
+	display :none;
+}
+
+#matiere_valide{
+	background:url("carnet_ouvert.jpg") no-repeat;
+	margin-left:3vh;
+	padding:40px 10px 50px;
+}
+
+#fr_ok, #geo_ok, #hist_ok, #ang_ok, #maths_ok{display:none}
+
+/*-----coffre-----*/
+#recompense{
+	width : 350px;
+	height : 200px;
+	background-image : url('coffre_ferme.png');
+	position : relative;
+	top : 600px;
+	left:47%;
+	-webkit-transform : translate(-50%, -50%);
+	transform : translate(-50%, -50%);
+	perspective : 1000px;
+	display:none;
+}
+
+#recompense:hover{
+	width : 330px;
+	height : 200px;
+	background-image : url('coffre_ouvert.png');
+	top : 600px;
+	left:46%;
+}
+
+#puzzle{
+	background-color: RGBa(0, 0, 0, 0.7);
+	padding:50px;
+	display:none;
+	text-align:center;
+	height:150px;
+	width: 1000px;
+	color:white;
+	margin-top: 20%;
+    transform: translateY(-80%);
+	margin-left:5%;
+}
+
+#puzzle button{
+	width:100px;
+	height:50px;
+	border-radius:0.4em;
+	padding:10px;
+}
+
+ /*----bouton caché-----*/
+#zone{
+	display: none;
+	flex-direction:row;
+	width:100%;
+	height:100%;
+}
+
+	/*--------francais-----*/
+	#zone_francais{
+		width: 45px;
+		margin-left:25.5%;
+		margin-top : 13%;
+		text-align:center;
+		height:75px;
+		position: relative;
+	}
+	
+	#francais{
+		visibility : hidden;
+		margin-top:60%;
+		border:none;
+		border-radius:1.5em;
+	}
+	
+	#francais a{
+		text-decoration:none;
+		color:black;
+	}
+
+	/*------histoire maths et geo-----*/
+	#zone_hist_math_geo{
+		flex-direction: column;
+		width:70%;
+		margin-right:100px;
+	}
+	
+		/*-------histoire-----*/
+		#zone_histoire{
+			width: 45%;
+			margin-top : 0;
+			left:0;
+			text-align:center;
+			height:100px;
+			position: relative;
+		}
+		
+		#histoire{
+			visibility : hidden;
+			margin-top:10%;
+			border:none;
+			border-radius:1.5em;
+		}
+		
+		#histoire a{
+			text-decoration:none;
+			color:black;
+		}
+		/*-------maths------*/
+		#zone_maths {
+			font-weight: bold;
+			margin-left:235px;
+			margin-top: 145px;
+			color: #FFFFFF;	
+			font-family: calibri, sans-serif;
+			font-size: 28px;
+			width:20%;
+		}
+
+		.text-base {
+			opacity: 1;
+		}
+
+		.text-hover {
+			display: none;
+		}
+
+		#zone_maths:hover .text-base {
+			opacity: 0;
+		}
+
+		#zone_maths:hover .text-hover {
+			display: inherit;
+			position: absolute;
+			white-space: nowrap; 
+		}
+		
+		#zone_maths a{
+			text-decoration:none;
+			color:white;
+		}
+		
+		
+		#zone_porte{
+			margin-right:100px;
+			margin-top: 500px;
+		}
+		/*-------geo-----*/
+		/* Animation globe */
+		.ball {
+			display: inline-block;
+			width: 35%;
+			height: 35%;
+			margin-left: 316px;
+			top: 20px;
+			border-radius: 50%;
+			position: relative;
+			-webkit-transform-style: preserve-3d;
+			background: url("planisphere.jpg") repeat-x;
+			background-size: auto 100%;
+		}
+
+		.ball:hover {
+			-webkit-animation: move-map 15s infinite linear;
+			-moz-animation: move-map 15s infinite linear;
+			-o-animation: move-map 15s infinite linear;
+			-ms-animation: move-map 15s infinite linear;
+			animation: move-map 15s infinite linear;
+		}
+
+		#zone_geo {
+			width: 300px;
+			height: 300px;
+			display: inline-block;
+			-webkit-perspective: 1200px;
+			-moz-perspective: 1200px;
+			-ms-perspective: 1200px;
+			-o-perspective: 1200px;
+			perspective: 1200px;
+			-webkit-perspective-origin: 50% 50%;
+			-moz-perspective-origin: 50% 50%;
+			-ms-perspective-origin: 50% 50%;
+			-o-perspective-origin: 50% 50%;
+			perspective-origin: 50% 50%;
+		}
+
+		@-moz-keyframes move-map {
+			0% {
+			background-position: 0 0; }
+
+			100% {
+			background-position: -849px 0;} 
+		}
+
+		@-webkit-keyframes move-map {
+			0% {
+			background-position: -849px 0; }
+			
+			100% {
+			background-position: 0 0; }
+		}
+
+		@-o-keyframes move-map {
+			0% {
+			background-position: 0 0; }
+
+			100% {
+			background-position: -849px 0; } 
+		}
+
+		@-ms-keyframes move-map {
+			0% {
+			background-position: 0 0;  }
+
+			100% {
+			background-position: -849px 0; } 
+		}
+
+		@keyframes move-map {
+			0% {
+			background-position: 0 0; }
+
+			100% {
+			background-position: -849px 0; }
+		}
+	
+	/*--------anglais------*/
+	#flag { 
+		position: absolute; 
+		top: 390px; 
+		right: 390px;
+	} 
+	
+	/* ---------- Français ---------- */
+
+#book-box {
+	width : 65px;
+	height : 65px;
+	background-image : url(page2.png);
+	position : relative;
+	margin-left:54vh;
+	margin-top:30.5vh;
+	-webkit-transform : translate(-50%, -50%);
+	transform : translate(-50%, -50%);
+	perspective : 1000px;
+}
+
+#book-cover {
+	width : 65px;
+	height : 100%;
+	position : absolute;
+	left : 0.5px;
+	background : #000;
+	transform : rotateY(-20deg);
+	transform-style : preserve-3d;
+	transform-origin : left;
+	transition : all .5s ease-in;
+}
+
+#book-box:hover .book-cover {
+	transform : rotateY(-180deg);
+}
+
+figure {
+	position : absolute;
+	margin-top : 0px;
+	display : block;
+	position : above;
+	width : 100%;
+	height : 100%;
+	left : -40px;
+	backface-visibility : hidden;
+}
+
+figure.front {
+	background-image : url(dico.png);
+}
+
+figure.back {
+	background-image : url(page1.png);
+	transform : rotateY(180deg);
+}
+
+/*----------histoire----------*/
+#container {
+	width: 720px;
+	height: 120px;
+	position: relative;
+	margin-left:-15vh;
+}
+
+#balle {
+	position: absolute;
+	background-color: black;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	top : 110px;
+	left: 5px;
+	/* animation: 5s linear 0s normal none 15 bouncing;  */
+}
+
+@keyframes bouncing {
+	40%,70%,90%{
+		-moz-animation-timing-function: ease-out;
+		bottom:0px;
+	}
+	0%{
+		-moz-animation-timing-function: ease-in;
+		bottom:0px;
+		left: 0;
+	}
+	7%{
+		-moz-animation-timing-function: ease-in;
+		bottom:55px;
+	}
+	13%{
+		-moz-animation-timing-function: ease-in;
+		bottom:0px;
+	}
+	25%{
+		-moz-animation-timing-function: ease-in;
+		bottom:55px;
+	}
+	40%{
+		-moz-animation-timing-function: ease-in;
+		bottom:0px;
+	}
+	55%{
+		-moz-animation-timing-function: ease-in;
+		bottom:55px;
+	}
+	65%{
+		-moz-animation-timing-function: ease-in;
+		bottom:0px;
+	}
+	73%{
+		-moz-animation-timing-function: ease-in;
+		bottom:55px;
+	}
+	78%{
+		-moz-animation-timing-function: ease-in;
+		bottom:0px;
+	}
+	83%{
+		-moz-animation-timing-function: ease-in;
+		bottom:55px;
+	}
+	88%{
+		-moz-animation-timing-function: ease-in;
+		bottom:0px;
+	}
+	100%{
+		-moz-animation-timing-function: ease-out;
+		bottom:25px;
+		left: 700px;
+	}
+
+}
